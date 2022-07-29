@@ -41,6 +41,7 @@ if [ -d ${N8N_PATH} ] ; then
 fi
 
 chown -R node /home/node
+exec su-exec npm install -g sqlite3 
 
 if [ "$#" -gt 0 ]; then
   # Got started with arguments
